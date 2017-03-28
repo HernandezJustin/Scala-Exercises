@@ -23,9 +23,9 @@ object challenge {
   }  
 
   def average(gList:List[Int]) {
-  	var counter = 0
+  	var counter:Double = 0.0
   	for(grade <- gList) yield(counter += grade)
-  	val avg = (counter.toDouble / gList.length)
+  	val avg = counter / gList.length
   	println("The average is " + avg)
   }
 } 
